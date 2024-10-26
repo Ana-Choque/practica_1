@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICIOS</title>
+</head>
+<body>
+    {% extends "index.html" %}
+    {% block title %}Servicios{% endblock %}
+    {% block content %}
+<section>
+    <h1>Nuestros Servicios</h1>
+
+    <div class="servicio">
+        <img src="{{ url_for('static', filename='images/servicio1.png') }}" alt="Servicio 1">
+        <h2>Logística y Entregas Aéreas</h2>
+        <p>Entrega de Última Milla: Soluciones rápidas y eficientes para la entrega de paquetes en áreas urbanas y rurales, reduciendo costos y tiempos de entrega.</p>
+        <a href="#" class="btn">Leer más</a>
+    </div>
+
+    <div class="servicio">
+        <img src="{{ url_for('static', filename='images/servicio2.png') }}" alt="Servicio 2">
+        <h2>Vigilancia y Seguridad</h2>
+        <p>Monitoreo en Tiempo Real: Vigilancia aérea con drones equipados con cámaras de alta resolución y sistemas de inteligencia artificial, ideales para la protección de instalaciones industriales, urbanas o fronterizas.</p>
+        <a href="#" class="btn">Leer más</a>
+    </div>
+</section>
+{% endblock %}
+</body>
+</html>

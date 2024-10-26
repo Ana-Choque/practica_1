@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+</head>
+<body>
+    {% extends "index.html" %}
+    {% block title %}Inicio{% endblock %}
+    {% block content %}
+    <section class="hero">
+        <h1>Bienvenido a InnovaDrone</h1>
+        <p>Ofrecemos [servicio/producto] para ayudarte a [proporcionar soluciones innovadoras y eficientes mediante el uso de drones, adaptadas a las necesidades de cada industria. Estas soluciones permiten mejorar la eficiencia, reducir costos, aumentar la seguridad y ofrecer un servicio avanzado que transforma las operaciones tradicionales.].</p>
+        <a href="/servicios" class="btn">Ver servicios</a>
+    </section>
+    
+    <section class="testimonios">
+        <h2>Testimonios</h2>
+        <p>"El mejor servicio que he recibido." - Cliente A</p>
+        <p>"Gran calidad y excelente atención al cliente." - Cliente B</p>
+    </section>
+    
+    <section class="redes-sociales">
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+    </section>
+    {% endblock %}
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTICIAS</title>
+</head>
+<body>
+    {% extends "index.html" %}
+    {% block title %}Noticias{% endblock %}
+    {% block content %}
+<section>
+    <h1>Noticias</h1>
+
+    <article>
+        <h2>InnovaDrone Lanza Plataforma de Entrega Autónoma en Zonas Rurales</h2>
+        <img src="{{ url_for('static', filename='images/noticia1.png') }}" alt="Noticia 1">
+        <p>Fecha: 15 de octubre de 2024
+            Descripción: InnovaDrone anunció el lanzamiento de su nueva plataforma de entrega autónoma diseñada para mejorar la logística en áreas rurales y de difícil acceso. Esta tecnología permitirá la entrega de productos esenciales, como medicamentos y suministros, en tiempos reducidos, utilizando drones equipados con inteligencia artificial para optimizar rutas y evitar obstáculos. Este lanzamiento marca un hito en la expansión de los servicios de la empresa hacia zonas desatendidas.</p>
+    </article>
+
+    <article>
+        <h2>InnovaDrone Firma Acuerdo con el Sector Agrícola para Implementar Drones en Agricultura de Precisión</h2>
+        <img src="{{ url_for('static', filename='images/noticia2.png') }}" alt="Noticia 2">
+        <p>Fecha: 8 de septiembre de 2024
+            Descripción: InnovaDrone ha firmado un acuerdo estratégico con varias cooperativas agrícolas para introducir su tecnología de drones en la agricultura de precisión. La empresa proporcionará drones equipados con sensores avanzados que ayudarán a los agricultores a monitorear la salud de sus cultivos, optimizar el uso de agua y fertilizantes, y detectar plagas o enfermedades. Se espera que esta colaboración impulse la productividad y reduzca el impacto ambiental en los campos agrícolas.</p>
+    </article>
+</section>
+{% endblock %}
+</body>
+</html>

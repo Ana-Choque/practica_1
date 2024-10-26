@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIENES SOMOS</title>
+</head>
+<body>
+    {% extends "index.html" %}
+    {% block title %}Quiénes Somos{% endblock %}
+    {% block content %}
+<section>
+    <h1>Quiénes Somos</h1>
+    <p>Somos una empresa dedicada a [desarrollo de soluciones tecnológicas avanzadas basadas en drones, diseñada para revolucionar sectores clave como logística, seguridad, agricultura, topografía, y más.].</p>
+
+    <h2>Misión</h2>
+    <p>Nuestra misión es [desarrollar soluciones tecnológicas avanzadas basadas en drones que impulsen la eficiencia, seguridad y sostenibilidad en diversas industrias. Nos comprometemos a innovar continuamente, proporcionando servicios personalizados que transformen las operaciones de nuestros clientes, optimizando la logística, la vigilancia, la agricultura y otros sectores clave. ].</p>
+
+    <h2>Visión</h2>
+    <p>Nuestra visión es [convertirnos en líderes globales en la creación de soluciones inteligentes con drones, transformando el futuro de industrias clave con tecnologías disruptivas y sostenibles. Queremos ser reconocidos como una empresa que redefine la innovación tecnológica, contribuyendo al desarrollo de un mundo más eficiente, seguro y conectado, donde las soluciones aéreas jueguen un papel fundamental en la mejora de la productividad y la preservación de los recursos naturales.].</p>
+
+    <h2>Nuestro Equipo</h2>
+    <p>Contamos con un equipo de profesionales en [campo].</p>
+    <img src="{{ url_for('static', filename='images/team.png') }}" alt="Nuestro equipo">
+</section>
+{% endblock %}
+</body>
+</html>
